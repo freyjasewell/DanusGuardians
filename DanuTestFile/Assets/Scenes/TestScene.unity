@@ -416,5 +416,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Danu_Stagealt
       objectReference: {fileID: 0}
+    - target: {fileID: 7152102175334791889, guid: 0cf50e66d7a658448a3fa2203dc77bc8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.03339
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf50e66d7a658448a3fa2203dc77bc8, type: 3}
