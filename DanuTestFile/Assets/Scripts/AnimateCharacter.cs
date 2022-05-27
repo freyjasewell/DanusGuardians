@@ -11,6 +11,10 @@ public class AnimateCharacter : MonoBehaviour
 
     public int lastTarget = 3; //targetIndex.Length - 1;
 
+    private void Awake()
+    {
+        Animator Anim = GetComponent<Animator>();
+    }
 
     private void Start()
     {
@@ -29,8 +33,15 @@ public class AnimateCharacter : MonoBehaviour
     {
         Debug.Log(targetIndex);
         //Move the NPC towards the target
+
+        // Put set destination from Navmesh here:
+
         transform.LookAt(targetDest[targetIndex]);
         transform.position = Vector3.MoveTowards(transform.position, targetDest[targetIndex], speed);
+
+
+        // Set Walking animation
+        GetComponent<Animator>().SetBool("IsWalking", true);
 
         if (transform.position == targetDest[targetIndex])
         {
