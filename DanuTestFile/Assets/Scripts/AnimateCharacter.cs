@@ -11,11 +11,6 @@ public class AnimateCharacter : MonoBehaviour
 
     public int lastTarget = 3; //targetIndex.Length - 1;
 
-    private void Awake()
-    {
-        Animator Anim = GetComponent<Animator>();
-    }
-
     private void Start()
     {
         targetIndex = 0;
