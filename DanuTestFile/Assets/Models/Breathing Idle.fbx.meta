@@ -1,11 +1,8 @@
 fileFormatVersion: 2
-guid: 6a997138a36a93b4a833dd722cd6b6a3
+guid: 06ea9cf884a3949729cd744d0b9a4500
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
-  - first:
-      74: -5540713611533062060
-    second: DanuHP|DanuHeadAction
   - first:
       74: -203655887218126122
     second: mixamo.com
@@ -92,7 +89,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: DanuHP
+    rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
@@ -100,7 +97,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
