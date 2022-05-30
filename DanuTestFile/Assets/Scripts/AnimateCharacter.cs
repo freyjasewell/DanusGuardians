@@ -5,15 +5,18 @@ using UnityEngine.AI;
 
 public class AnimateCharacter : MonoBehaviour
 {
-    public Vector3[] targetDest = new Vector3[targetIndex];
+    private Vector3[] targetDest = new Vector3[targetIndex];
     public static int targetIndex;
-    private static int randomIndex; 
+    private static int randomIndex;
+
+    public Transform[] positions;
 
     private NavMeshAgent agent;
-   // private NavMeshPath pathway = new NavMeshPath();
-   //Would a NavMeshPath be a better way to get the NPC to move around?
 
     Animator anim;
+
+    private bool isWaving = false;
+
 
 
     private void Start()
@@ -23,48 +26,48 @@ public class AnimateCharacter : MonoBehaviour
 
         agent.autoBraking = false;
 
-      //  NavMesh.CalculatePath(transform.position, NavMesh.AllAreas, int areaMask??, pathway);
-
         anim.SetBool("IsWalking", true);
 
-
-        SetPath();
+        Randomize();
+        // SetPath();
     }
 
     public void FixedUpdate()
     {
         Movement();
-
-        // agent.SetPath(pathway);
-
-        //Wave animation on Space down - currently sets it permanently to true. But it causes it to bounce between states.
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            GetComponent<Animator>().SetBool("IsWaving", true);
-
-            //Attempted to implement IENumerator to get it working
-            // Wave();
-        }
-
+        StartCoroutine("Wave2");
     }
 
     //Previous pathway positions
     void Movement()
     {
-       agent.destination = targetDest[targetIndex];
-        
+        agent.destination = positions[randomIndex].position;
+
+        if (!agent.pathPending && agent.remainingDistance < 0.5f)
+            Randomize();
+
+        FaceTarget();
+
+
+        //transform.LookAt(agent.destination);
+
+
+       
+
+        /* To traverse through array
+         * agent.destination = targetDest[targetIndex];
+         * 
        targetIndex = (targetIndex++) % targetDest.Length;
 
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
             targetIndex++;
+
+          if (targetDest.Length == targetIndex)
+         {
+             targetIndex = 0;
+         }
         
-        if (targetDest.Length == targetIndex)
-        {
-            targetIndex = 0;
-        } 
-
-        transform.LookAt(targetDest[targetIndex]);
-
+         transform.LookAt(targetDest[targetIndex]); */
 
         // private float speed = 1.2f;
 
@@ -74,34 +77,64 @@ public class AnimateCharacter : MonoBehaviour
     }
 
 
+    void Randomize()
+    {
+        randomIndex = Random.Range(0, positions.Length);
+    }
+
+    void FaceTarget()
+    {
+        Vector3 direction = (agent.destination - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+    }
+
+    //Trying to get Wave annimation to work on Keydown
+    void Wave()
+    {
+
+        //Wave animation on Space down - currently sets it permanently to true. But it causes it to bounce between states.
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GetComponent<Animator>().SetTrigger("WaveTrigger");
+
+            isWaving = true;
+
+            if (isWaving == true)
+            {
+                agent.isStopped = true;
+                
+            }
+        }
+
+        //Need this to be a timer/coroutine or on isWaving == false;
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            agent.isStopped = false;
+        }
+
+    }
+
+    IEnumerator Wave2()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GetComponent<Animator>().SetTrigger("WaveTrigger");
+
+            agent.isStopped = true;
+            yield return new WaitForSeconds(3);
+            agent.isStopped = false;
+        }
+    }
+
     void SetPath()
     {
-        randomIndex = Random.Range(0, targetDest.Length); //Attempt to get random.range working 
-
         //Set the vectors to be the points you want it to visit on the Level
         targetDest[0] = new Vector3(21f, 15.4f, 0f);
-
         targetDest[1] = new Vector3(12f, 15.15f, 6);
-
         targetDest[2] = new Vector3(21f, 15.5f, 13f);
-
         targetDest[3] = new Vector3(18.7f, 16.4f, -6.6f);
     }
 
 
-    //Trying to get Wave annimation to work on Keydown
-    IEnumerator Wave()
-    {
-
-        GetComponent<Animator>().SetBool("IsWaving", true);
-
-
-        /* if (Input.GetKeyUp(KeyCode.Space))
-             GetComponent<Animator>().SetBool("IsWaving", false);*/
-
-        yield return new WaitForSeconds(0.5f);
-
-        //Stop Movement?
-
-    }
 }
