@@ -122,7 +122,7 @@ public class AnimateCharacter : MonoBehaviour
             GetComponent<Animator>().SetTrigger("WaveTrigger");
 
             agent.isStopped = true;
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(3.5f);
             agent.isStopped = false;
         }
     }
