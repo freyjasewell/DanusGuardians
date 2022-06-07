@@ -38,6 +38,6 @@ public class CameraMovement : MonoBehaviour
         rotX = Mathf.Clamp(rotX, minTurnAngle, maxTurnAngle);
 
         // rotate the camera
-        transform.eulerAngles = new Vector3(-rotX, transform.eulerAngles.y + y, 0);
+        transform.eulerAngles = new Vector3(-rotX, transform.eulerAngles.y, 0); //+y after .y
     }
 }
