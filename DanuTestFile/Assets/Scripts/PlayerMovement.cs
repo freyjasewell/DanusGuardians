@@ -7,13 +7,13 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
 
-    public float speed = 3f;
-    public float gravity = -9.8f;
+    public float speed = 0.3f;
+    /* public float gravity = -9.8f;
     Vector3 velocity;
     public Transform groundCheck;
     public float groundDistance = 0.2f;
     public LayerMask groundMask;
-    bool isGrounded;
+    bool isGrounded; */
 
 
     private NavMeshAgent agent;
@@ -44,8 +44,12 @@ public class PlayerMovement : MonoBehaviour
         float z = Input.GetAxis("Vertical");
         Vector3 move = transform.right * x + transform.forward * z;
 
+        agent.Move(move * agent.speed); 
+
         //controller.Move(move * speed * Time.deltaTime);
 
-        agent.Move(move);
+
+        //Moves the player strangely - forward movement gets stuck since I added camera movement.
+
     }
 }
