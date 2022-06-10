@@ -104,7 +104,7 @@ public class NPCMovementScript : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
 
-    // Player gets within collider sphere of NPC
+    // NPC Sphere Collider - NPC stops walking, faces player and waves.
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -114,10 +114,10 @@ public class NPCMovementScript : MonoBehaviour
             facingPlayer = true;
             agent.isStopped = true;
            
-            //StartCoroutine("Wave");
         }
     }
 
+    //Restarts the NPC walking
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
@@ -127,17 +127,6 @@ public class NPCMovementScript : MonoBehaviour
             facingPlayer = false;
             agent.isStopped = false;
         }
-    }
-    // Stop walking, Face player and wave
-    IEnumerator Wave()
-    {
-        anim.SetTrigger("WaveTrigger");
-        facingPlayer = true;
-        agent.isStopped = true;
-        yield return new WaitForSeconds(3.55f);
-        agent.isStopped = false;
-        facingPlayer = false;
-
     }
 
 }
