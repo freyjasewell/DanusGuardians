@@ -15,14 +15,21 @@ public class VideoScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
      {
-        Debug.Log("In the sphere");
-        videoPlayer.Play();
+        if(other.tag == "Player")
+        {
+            Debug.Log("In the sphere");
+            videoPlayer.Play();
+        }
+        
      } 
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("Outside sphere");
-        videoPlayer.Pause();
+        if (other.tag == "Player")
+        {
+            Debug.Log("Outside sphere");
+            videoPlayer.Pause();
+        }
     }
 
 }

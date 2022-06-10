@@ -109,10 +109,25 @@ public class NPCMovementScript : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            StartCoroutine(Wave());
+            
+            anim.SetTrigger("WaveTrigger");
+            facingPlayer = true;
+            agent.isStopped = true;
+           
+            //StartCoroutine("Wave");
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            anim.SetTrigger("WaveFinished");
+            
+            facingPlayer = false;
+            agent.isStopped = false;
+        }
+    }
     // Stop walking, Face player and wave
     IEnumerator Wave()
     {
