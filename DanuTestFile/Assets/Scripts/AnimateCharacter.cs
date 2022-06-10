@@ -53,7 +53,7 @@ public class AnimateCharacter : MonoBehaviour
         if (other.tag == "Player")
         {
             GetComponent<Animator>().SetTrigger("WaveTrigger");
-            anim.SetBool("IsWaving", true);
+            
             anim.SetBool("IsWalking", false);
             agent.isStopped = true;
 
