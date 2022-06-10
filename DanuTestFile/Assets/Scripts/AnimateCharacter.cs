@@ -52,7 +52,23 @@ public class AnimateCharacter : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            StartCoroutine("Wave");
+            GetComponent<Animator>().SetTrigger("WaveTrigger");
+            anim.SetBool("IsWaving", true);
+            anim.SetBool("IsWalking", false);
+            agent.isStopped = true;
+
+            //StartCoroutine("Wave");
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            //anim.SetBool("IsWaving", false);
+            anim.SetBool("IsWalking", true);
+
+            agent.isStopped = false;
         }
     }
 
