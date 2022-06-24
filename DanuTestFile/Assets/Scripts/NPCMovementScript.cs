@@ -17,7 +17,7 @@ public class NPCMovementScript : MonoBehaviour
     [Header("Destination Positions")]
     public Transform[] positions;
 
-    // Private Veriables
+    // Private Variables
     int randomIndex;
     float waitTime;
     bool facingPlayer = false;

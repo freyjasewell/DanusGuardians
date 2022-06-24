@@ -51,11 +51,11 @@ public class PlayerMovement : MonoBehaviour
         //Walking backwards
         if (Input.GetKey(KeyCode.S))
         {
-            anim.SetBool("IsWalking", true);
+            anim.SetBool("Backwards", true);
         }
         if (Input.GetKeyUp(KeyCode.S))
         {
-            anim.SetBool("IsWalking", false);
+            anim.SetBool("Backwards", false);
         }
     }
 }
