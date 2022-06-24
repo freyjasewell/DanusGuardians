@@ -38,24 +38,51 @@ public class PlayerMovement : MonoBehaviour
 
     void Animation()
     {
+
+        //Animation variables
+        bool movingFoward = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);
+        bool movingBackwards = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
+        bool moveRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
+        bool moveLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
+
         //Walking Forwards
-        if (Input.GetKey(KeyCode.W))
+        if (movingFoward == true)
         {
             anim.SetBool("IsWalking", true);
         }
-        if (Input.GetKeyUp(KeyCode.W))
+        if (movingFoward == false)
         {
             anim.SetBool("IsWalking", false);
         }
 
         //Walking backwards
-        if (Input.GetKey(KeyCode.S))
+        if (movingBackwards == true)
         {
             anim.SetBool("Backwards", true);
         }
-        if (Input.GetKeyUp(KeyCode.S))
+        if (movingBackwards == false)
         {
             anim.SetBool("Backwards", false);
+        }
+
+        //Side step animation
+        if(moveRight == true)
+        {
+            anim.SetBool("RightStep", true);
+        }
+        if (moveRight == false)
+        {
+            anim.SetBool("RightStep", false);
+        }
+
+        if (moveLeft == true)
+        {
+            anim.SetBool("LeftStep", true);
+        }
+        if (moveLeft == false)
+        {
+            anim.SetBool("LeftStep", false);
+
         }
     }
 }
