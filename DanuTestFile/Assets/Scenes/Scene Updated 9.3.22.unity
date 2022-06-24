@@ -110,7 +110,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 38
+    agentSlope: 50.4
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -1009,6 +1009,7 @@ GameObject:
   - component: {fileID: 505651016}
   - component: {fileID: 505651017}
   - component: {fileID: 505651018}
+  - component: {fileID: 505651019}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1105,6 +1106,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &505651019
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505651013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &575606189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1261,6 +1276,26 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.05763091
   m_Center: {x: 2.5123543e-18, y: -1.1295327e-11, z: 0.0009870768}
+--- !u!1 &619532699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 470e8ba0fb8dd43c4912bf6131165054,
+    type: 3}
+  m_PrefabInstance: {fileID: 1068975407}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &619532703
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619532699}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3661659028209742421, guid: 470e8ba0fb8dd43c4912bf6131165054, type: 3}
 --- !u!1001 &670357472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1783,6 +1818,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainFlower
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ea565f9af68043bca124a7c29f0d843,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ea565f9af68043bca124a7c29f0d843, type: 3}
 --- !u!1001 &1068975407
@@ -1856,6 +1896,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hub
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 470e8ba0fb8dd43c4912bf6131165054,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 470e8ba0fb8dd43c4912bf6131165054, type: 3}
