@@ -17,6 +17,9 @@
         },
         {
             "m_Id": "8b96377ec0d8414aa051796678c0f1d4"
+        },
+        {
+            "m_Id": "8ffead91e05540708b21f60c63fa0112"
         }
     ],
     "m_Keywords": [],
@@ -92,6 +95,9 @@
         },
         {
             "m_Id": "fa9605ecce0940898f44dc8a3f4c19e9"
+        },
+        {
+            "m_Id": "71c4990e5f59464e9d098be0981fd4b1"
         }
     ],
     "m_GroupDatas": [],
@@ -123,6 +129,20 @@
                     "m_Id": "1a9fac24da5443ba92300def4b10f24b"
                 },
                 "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "71c4990e5f59464e9d098be0981fd4b1"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "fa9605ecce0940898f44dc8a3f4c19e9"
+                },
+                "m_SlotId": 1
             }
         },
         {
@@ -672,6 +692,31 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "2e2d4b37974847dd8969750693cf643f",
+    "m_Id": 0,
+    "m_DisplayName": "NonEmissionColour",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalLitSubTarget",
     "m_ObjectId": "3b09b3699ba34cd1bed901b95577ac1f",
     "m_WorkflowMode": 1,
@@ -1025,6 +1070,41 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "71c4990e5f59464e9d098be0981fd4b1",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 265.0000305175781,
+            "y": -541.0,
+            "width": 181.5,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "2e2d4b37974847dd8969750693cf643f"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "8ffead91e05540708b21f60c63fa0112"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "732835ca96f64c378a0c9b9332824c2f",
     "m_Group": {
@@ -1312,6 +1392,30 @@
         "z": 0.0,
         "w": 0.0
     }
+}
+
+{
+    "m_SGVersion": 3,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
+    "m_ObjectId": "8ffead91e05540708b21f60c63fa0112",
+    "m_Guid": {
+        "m_GuidSerialized": "6d9f291e-814d-4d27-bddf-60feb335f186"
+    },
+    "m_Name": "NonEmissionColour",
+    "m_DefaultReferenceName": "Color_8ffead91e05540708b21f60c63fa0112",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+    },
+    "m_ColorMode": 1
 }
 
 {
@@ -1976,10 +2080,10 @@
     "m_ShaderOutputName": "B",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 1.0,
-        "w": 1.0
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -2232,8 +2336,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 499.0,
-            "y": -481.5,
+            "x": 552.0000610351563,
+            "y": -551.5,
             "width": 208.0,
             "height": 326.0
         }
@@ -2315,10 +2419,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 245.0,
-            "y": -539.5,
-            "width": 0.0,
-            "height": 0.0
+            "x": 245.5,
+            "y": -723.5,
+            "width": 160.50001525878907,
+            "height": 34.0
         }
     },
     "m_Slots": [
