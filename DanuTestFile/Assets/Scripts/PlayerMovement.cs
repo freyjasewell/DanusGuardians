@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         float z = Input.GetAxis("Vertical");
         Vector3 move = transform.right * x + transform.forward * z;
 
-        agent.Move(move * agent.speed / 20);
+        agent.Move(move * agent.speed / 15);
     }
 
     void Animation()
