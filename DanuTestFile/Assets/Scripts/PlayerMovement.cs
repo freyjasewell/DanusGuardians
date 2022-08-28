@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private NavMeshAgent agent;
 
-    public float speed = 0.3f;
+   // public float speed = 0.3f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         MovePlayer();
         Animation();
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         float z = Input.GetAxis("Vertical");
         Vector3 move = transform.right * x + transform.forward * z;
 
-        agent.Move(move * agent.speed);
+        agent.Move(move * agent.speed / 15);
     }
 
     void Animation()
