@@ -10,6 +10,9 @@ public class VideoScript : MonoBehaviour
 
     public AudioMixerSnapshot isWatching;
     public AudioMixerSnapshot notWatching;
+
+    public float audioFadeInTime = 1.5f;
+    public float audioFadeOutTime = 1.7f;
     
 
     private void Awake()
@@ -25,7 +28,7 @@ public class VideoScript : MonoBehaviour
             Debug.Log("In the sphere");
             videoPlayer.Play();
 
-            isWatching.TransitionTo(.7f);
+            isWatching.TransitionTo(audioFadeInTime);
         }
         
      } 
@@ -37,7 +40,7 @@ public class VideoScript : MonoBehaviour
             Debug.Log("Outside sphere");
             videoPlayer.Pause();
 
-            notWatching.TransitionTo(.7f);
+            notWatching.TransitionTo(audioFadeOutTime);
         }
     }
 

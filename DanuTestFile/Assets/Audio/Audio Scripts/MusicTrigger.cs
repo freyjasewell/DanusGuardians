@@ -17,9 +17,6 @@ public class MusicTrigger : MonoBehaviour
         if (!playMusic.isPlaying)
         {
             playMusic.Play();
-        }
-        else
-        {
             m_Collider.enabled = !m_Collider.enabled;
         }
         

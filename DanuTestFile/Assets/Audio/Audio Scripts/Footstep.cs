@@ -30,6 +30,8 @@ public class Footstep : MonoBehaviour
         audioSource.pitch = Random.Range(1 - pitchChangeMultiply, 1 + pitchChangeMultiply);
         audioSource.PlayOneShot(hitclip);
 
+        
+
 
         
 
