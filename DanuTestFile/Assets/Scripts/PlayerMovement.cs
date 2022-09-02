@@ -6,17 +6,20 @@ using UnityEngine.AI;
 public class PlayerMovement : MonoBehaviour
 {
     //Variable set up
-    public CharacterController controller;
+   // public CharacterController controller;
+    public Transform player;
     private Animator anim;
     private NavMeshAgent agent;
+    private Transform cameraTransform;
 
-   // public float speed = 0.3f;
+    public float rotationSensitivity;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+        cameraTransform = Camera.main.transform;
     }
 
     // Update is called once per frame
@@ -31,9 +34,14 @@ public class PlayerMovement : MonoBehaviour
         //Move the player
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
-        Vector3 move = transform.right * x + transform.forward * z;
+        //Vector3 move = transform.right * x + transform.forward * z;
+        Vector3 move = cameraTransform.right * x + cameraTransform.forward * z;
 
-        agent.Move(move * agent.speed / 15);
+        agent.Move(move * Time.deltaTime * agent.speed);
+
+        
+        player.Rotate(Vector3.up * z * Time.deltaTime);
+
     }
 
     void Animation()
