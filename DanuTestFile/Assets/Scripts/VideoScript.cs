@@ -38,7 +38,8 @@ public class VideoScript : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("Outside sphere");
-            videoPlayer.Pause();
+            //videoPlayer.Pause();
+            videoPlayer.Stop();
 
             notWatching.TransitionTo(audioFadeOutTime);
         }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45106554, g: 0.6695443, b: 0.65616643, a: 1}
+  m_IndirectSpecularColor: {r: 0.45030567, g: 0.6701681, b: 0.6564095, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -110,7 +110,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 38
+    agentSlope: 40
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -2963,7 +2963,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 1
-  m_Acceleration: 2
+  m_Acceleration: 1
   avoidancePriority: 50
   m_AngularSpeed: 10
   m_StoppingDistance: 0
@@ -3873,7 +3873,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575606191}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 8ba43b92f5381354883873c8cb543b9a, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 02306eb0769a842c68e760a2ded3f401, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -14503,8 +14503,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05763091
-  m_Center: {x: 2.5123543e-18, y: -1.1295327e-11, z: 0.0009870768}
+  m_Radius: 0.06491517
+  m_Center: {x: -2.6192518e-10, y: -3.8993813e-12, z: 0.011043721}
 --- !u!82 &670357480
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19990,7 +19990,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756475375}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 42969329bffb15d46b052a818df9d8f5, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: f7f6e49f060b14c2f9c72f940453e108, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -39816,7 +39816,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616525002}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 6845b93aec34f0449b9f616252ac93f2, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: b991c7e0c090f4068bb826c65604f8ce, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -39854,8 +39854,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05763091
-  m_Center: {x: 2.5123543e-18, y: -1.1295327e-11, z: 0.0009870768}
+  m_Radius: 0.061182935
+  m_Center: {x: -0.00026393196, y: 3.0566177e-10, z: 0.0057657836}
 --- !u!82 &1616525009
 AudioSource:
   m_ObjectHideFlags: 0
@@ -41197,8 +41197,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05763091
-  m_Center: {x: 2.5123543e-18, y: -1.1295327e-11, z: 0.0009870768}
+  m_Radius: 0.05728382
+  m_Center: {x: -0.0000052931787, y: -0.00004700043, z: 0.00041182054}
 --- !u!82 &1766352013
 AudioSource:
   m_ObjectHideFlags: 0
@@ -41469,8 +41469,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05763091
-  m_Center: {x: 2.5123543e-18, y: -1.1295327e-11, z: 0.0009870768}
+  m_Radius: 0.066482745
+  m_Center: {x: 0.00003899346, y: 0.008872012, z: 0.0004868365}
 --- !u!82 &1795799110
 AudioSource:
   m_ObjectHideFlags: 0
@@ -41898,8 +41898,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05763091
-  m_Center: {x: 2.5123543e-18, y: -1.1295327e-11, z: 0.0009870768}
+  m_Radius: 0.11272254
+  m_Center: {x: -0.0015441986, y: 0.048677173, z: -0.0076846248}
 --- !u!82 &1828293233
 AudioSource:
   m_ObjectHideFlags: 0
@@ -42354,7 +42354,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842408260}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d2445d0dbdeeacb46821af92dc8ccbf5, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: fbe31fcf89d154223a1ff648002c5987, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -42695,7 +42695,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1860880586}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 6cfa443bc6016a742aad39414b3325dd, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 324ff4c059469432d863c9b991cb207e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
