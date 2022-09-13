@@ -2,12 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Audio;
+using UnityEditorInternal;
 
 public class CinemachineSequence : MonoBehaviour
 {
     public CinemachineVirtualCamera vCamera1;
     public CinemachineVirtualCamera vCamera2;
     public CinemachineVirtualCamera vCameraFP;
+
+
+    public AudioMixerSnapshot audioSnapMaster_InPlant;
+    public AudioMixerSnapshot audioSnapPlayerNPC_InPlant;
+    public float audioTransitionTime = 8.5f;
+    
 
     
     // Start is called before the first frame update
@@ -16,6 +24,12 @@ public class CinemachineSequence : MonoBehaviour
         vCamera1.m_Priority = 2;
         vCamera2.m_Priority = 1;
         vCameraFP.m_Priority = 0;
+
+        ///Ollies Audio Transitions
+
+        audioSnapMaster_InPlant.TransitionTo(audioTransitionTime);
+        audioSnapPlayerNPC_InPlant.TransitionTo(audioTransitionTime);
+
     }
 
     // Update is called once per frame
