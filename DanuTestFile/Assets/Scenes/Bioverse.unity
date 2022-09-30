@@ -567,171 +567,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58261315}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &68790317
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 68790322}
-  - component: {fileID: 68790321}
-  - component: {fileID: 68790320}
-  - component: {fileID: 68790319}
-  - component: {fileID: 68790318}
-  - component: {fileID: 68790324}
-  - component: {fileID: 68790323}
-  m_Layer: 0
-  m_Name: Quad Video - Tawana
-  m_TagString: Video
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!328 &68790318
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68790317}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: c1995612f57074f6284c36e9ee83c816, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: f8945a931b76244d689bd49ae5ffae88, type: 2}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 2
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
-  m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 0
-  m_SkipOnDrop: 1
-  m_Looping: 1
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
---- !u!64 &68790319
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68790317}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &68790320
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68790317}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 6fbf653564f2b4f5d8a655022f450801, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &68790321
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68790317}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &68790322
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68790317}
-  m_LocalRotation: {x: -0, y: 0.39686036, z: -0, w: 0.917879}
-  m_LocalPosition: {x: 14.6, y: -0.33262253, z: 13.2}
-  m_LocalScale: {x: 6.6239786, y: 3.5583873, z: 6.2556453}
-  m_Children: []
-  m_Father: {fileID: 1518848665}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 46.764, z: 0}
---- !u!114 &68790323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68790317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isWatching: {fileID: 0}
-  notWatchingMusicOff: {fileID: 0}
-  notWatchingMusicON: {fileID: 0}
-  audioFadeInTime: 1.5
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
---- !u!135 &68790324
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68790317}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.94687265
-  m_Center: {x: -0.017806107, y: 0, z: -0.37706855}
 --- !u!1 &72041449
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,171 +1943,6 @@ Transform:
   m_Father: {fileID: 1081044820}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &309206255
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 309206256}
-  - component: {fileID: 309206260}
-  - component: {fileID: 309206259}
-  - component: {fileID: 309206258}
-  - component: {fileID: 309206257}
-  - component: {fileID: 309206261}
-  - component: {fileID: 309206262}
-  m_Layer: 0
-  m_Name: Quad Video - Daniel 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &309206256
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309206255}
-  m_LocalRotation: {x: -0, y: -0.19101226, z: -0, w: 0.98158765}
-  m_LocalPosition: {x: -19.24, y: 2.8, z: 22.35}
-  m_LocalScale: {x: 6.623979, y: 3.558, z: 6.255645}
-  m_Children: []
-  m_Father: {fileID: 1518848665}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -22.024, z: 0}
---- !u!135 &309206257
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309206255}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.3350554
-  m_Center: {x: 0.000000009580454, y: 0, z: -0.35478333}
---- !u!64 &309206258
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309206255}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &309206259
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309206255}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: bc5174a25307748598444ce53749c2fb, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &309206260
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309206255}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!328 &309206261
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309206255}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 789bb3dd58ac641079c7f0e63bcbdd26, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: 0fa2e6eccdb52424492e9a48e562c2bf, type: 2}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 2
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
-  m_Url: https://drive.google.com/file/d/1_sI4KNgJNtDlIZd6wQQfpdIE5xwUUisS/view?usp=sharing
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 0
-  m_SkipOnDrop: 1
-  m_Looping: 1
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
---- !u!114 &309206262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309206255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isWatching: {fileID: 0}
-  notWatchingMusicOff: {fileID: 0}
-  notWatchingMusicON: {fileID: 0}
-  audioFadeInTime: 1.5
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
 --- !u!1 &317276274
 GameObject:
   m_ObjectHideFlags: 0
@@ -3586,7 +3256,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3
-  m_Acceleration: 1
+  m_Acceleration: 0.8
   avoidancePriority: 50
   m_AngularSpeed: 300
   m_StoppingDistance: 0
@@ -4222,14 +3892,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _BaseMap
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 557717550}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://fgreetham.github.io/GuardianVideos/3_DETAIL_Tawana's%20message.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -4390,7 +4060,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e64aa22a9fed847b69f914a5e785c706,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e64aa22a9fed847b69f914a5e785c706,
         type: 3}
@@ -4515,14 +4185,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _BaseMap
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 575606197}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://fgreetham.github.io/GuardianVideos/Tawana's%20message_MAIN.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -4543,8 +4213,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05763091
-  m_Center: {x: 2.5123543e-18, y: -1.1295327e-11, z: 0.0009870768}
+  m_Radius: 0.07356346
+  m_Center: {x: 3.224477e-16, y: 0.0000000011936536, z: 0.022983532}
 --- !u!82 &575606197
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4687,14 +4357,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _BaseMap
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 580089052}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://fgreetham.github.io/GuardianVideos/Alex_DET.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -4715,8 +4385,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.027
-  m_Center: {x: 2.5123543e-18, y: -1.1295327e-11, z: 0.0009870768}
+  m_Radius: 0.037409622
+  m_Center: {x: 0.00081396726, y: -0.00013420232, z: 0.011695584}
 --- !u!82 &580089052
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14985,7 +14655,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e64aa22a9fed847b69f914a5e785c706,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e64aa22a9fed847b69f914a5e785c706,
         type: 3}
@@ -15115,14 +14785,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _BaseMap
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 670357480}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://fgreetham.github.io/GuardianVideos/Haru_Main.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -20662,7 +20332,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e64aa22a9fed847b69f914a5e785c706,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e64aa22a9fed847b69f914a5e785c706,
         type: 3}
@@ -20787,14 +20457,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _BaseMap
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 756475381}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://fgreetham.github.io/GuardianVideos/Alex_MAIN.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -20815,8 +20485,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05763091
-  m_Center: {x: 2.5123543e-18, y: -1.1295327e-11, z: 0.0009870768}
+  m_Radius: 0.08134527
+  m_Center: {x: -8.9159534e-11, y: -0.0027917672, z: 0.021346206}
 --- !u!82 &756475381
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26692,14 +26362,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _BaseMap
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 922978995}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://fgreetham.github.io/GuardianVideos/Yesica_DET.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -26720,8 +26390,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.023
-  m_Center: {x: 2.5123543e-18, y: -1.1295327e-11, z: 0.0009870768}
+  m_Radius: 0.026000518
+  m_Center: {x: 0.0000000069098745, y: -0.000057095025, z: 0.005127999}
 --- !u!82 &922978995
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33438,14 +33108,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _BaseMap
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 1133859460}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://fgreetham.github.io/GuardianVideos/Yesica_DET_02.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -36376,8 +36046,6 @@ Transform:
   m_LocalPosition: {x: 7.452112, y: 17.947622, z: 9.65847}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 309206256}
-  - {fileID: 68790322}
   - {fileID: 1860880585}
   - {fileID: 575606190}
   - {fileID: 1842408259}
@@ -41502,14 +41170,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _BaseMap
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 1616525009}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://fgreetham.github.io/GuardianVideos/Alex_Sub.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
@@ -41530,8 +41198,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.061182935
-  m_Center: {x: -0.00026393196, y: 3.0566177e-10, z: 0.0057657836}
+  m_Radius: 0.09293269
+  m_Center: {x: -0.0002639277, y: 0.00032972763, z: 0.005765789}
 --- !u!82 &1616525009
 AudioSource:
   m_ObjectHideFlags: 0
@@ -43110,14 +42778,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _BaseMap
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 1766352013}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://fgreetham.github.io/GuardianVideos/Haru_DET_1.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -43386,14 +43054,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _BaseMap
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 1795799110}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://fgreetham.github.io/GuardianVideos/Tawana_DET.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
@@ -43414,8 +43082,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.066482745
-  m_Center: {x: 0.00003899346, y: 0.008872012, z: 0.0004868365}
+  m_Radius: 0.08458322
+  m_Center: {x: -0.0004182011, y: 0.007865803, z: 0.025544}
 --- !u!82 &1795799110
 AudioSource:
   m_ObjectHideFlags: 0
@@ -43619,14 +43287,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _BaseMap
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 1809913805}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://fgreetham.github.io/GuardianVideos/Yesica_DET_03.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -43823,14 +43491,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _BaseMap
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 1828293233}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://fgreetham.github.io/GuardianVideos/Yesica_DET_04.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -43851,8 +43519,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.14
-  m_Center: {x: -0.0015441986, y: 0.048677173, z: -0.0076846248}
+  m_Radius: 0.1608028
+  m_Center: {x: -0.0008527882, y: 0.027339214, z: -0.0031652092}
 --- !u!82 &1828293233
 AudioSource:
   m_ObjectHideFlags: 0
@@ -44196,7 +43864,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e64aa22a9fed847b69f914a5e785c706,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e64aa22a9fed847b69f914a5e785c706,
         type: 3}
@@ -44321,14 +43989,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _BaseMap
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 1842408266}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://fgreetham.github.io/GuardianVideos/Yessica_MAIN.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -44349,8 +44017,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05763091
-  m_Center: {x: 2.5123543e-18, y: -1.1295327e-11, z: 0.0009870768}
+  m_Radius: 0.06751092
+  m_Center: {x: -6.0694214e-11, y: -0.0031298487, z: 0.010306339}
 --- !u!82 &1842408266
 AudioSource:
   m_ObjectHideFlags: 0
@@ -44551,7 +44219,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e64aa22a9fed847b69f914a5e785c706,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e64aa22a9fed847b69f914a5e785c706,
         type: 3}
@@ -47555,8 +47223,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.4178872
-  m_Center: {x: 0.01349081, y: 1.1833229, z: 0.51254296}
+  m_Radius: 1.849056
+  m_Center: {x: 0.042899027, y: 1.1833228, z: 0.7628933}
 --- !u!54 &2403939638983566283
 Rigidbody:
   m_ObjectHideFlags: 0
