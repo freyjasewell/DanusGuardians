@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -53,7 +52,7 @@ public class AnimateCharacter : MonoBehaviour
         if (other.tag == "Player")
         {
             GetComponent<Animator>().SetTrigger("WaveTrigger");
-            
+
             anim.SetBool("IsWalking", false);
             agent.isStopped = true;
 
@@ -80,7 +79,7 @@ public class AnimateCharacter : MonoBehaviour
         GetComponent<Animator>().SetTrigger("WaveTrigger");
 
         agent.isStopped = true;
-       //Could FaceDirection be paused or changed here?
+        //Could FaceDirection be paused or changed here?
         yield return new WaitForSeconds(3.55f);
         agent.isStopped = false;
     }

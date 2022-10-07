@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Cinemachine;
+using System.Collections;
+using UnityEngine;
 using UnityEngine.Audio;
-using UnityEditorInternal;
 
 public class CinemachineSequence : MonoBehaviour
 {
@@ -15,9 +13,9 @@ public class CinemachineSequence : MonoBehaviour
     public AudioMixerSnapshot audioSnapMaster_InPlant;
     public AudioMixerSnapshot audioSnapPlayerNPC_InPlant;
     public float audioTransitionTime = 8.5f;
-    
 
-    
+
+
     // Start is called before the first frame update
     void Start()
     {

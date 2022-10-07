@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -17,6 +15,8 @@ public class NPCMovementScript : MonoBehaviour
     [Header("Destination Positions")]
     public Transform[] positions;
 
+
+
     // Private Variables
     int randomIndex;
     float waitTime;
@@ -24,15 +24,26 @@ public class NPCMovementScript : MonoBehaviour
     NavMeshAgent agent;
     Animator anim;
 
+    DanuVoiceLines danuVoiceScript;
+
+
     private void Start()
     {
         // References Setup
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
 
+
+
+
         waitTime = waitTimeBetweenPoints;
 
         Randomize();
+
+        //Ollie's Audio Script
+        danuVoiceScript = gameObject.GetComponent<DanuVoiceLines>();
+
+
     }
 
     public void FixedUpdate()
@@ -77,15 +88,15 @@ public class NPCMovementScript : MonoBehaviour
     // Randomise Index for list of Destinations
     void Randomize()
     {
-        randomIndex = Random.Range(0, positions.Length -1);
+        randomIndex = Random.Range(0, positions.Length - 1);
     }
 
     // Stops and Waits for next destination
     void WaitForNextDestination()
     {
-            Randomize();
-            anim.SetBool("IsWalking", true);
-            waitTime = waitTimeBetweenPoints;
+        Randomize();
+        anim.SetBool("IsWalking", true);
+        waitTime = waitTimeBetweenPoints;
     }
 
     // NPC Looks where they are going
@@ -109,11 +120,15 @@ public class NPCMovementScript : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            
+
             anim.SetTrigger("WaveTrigger");
             facingPlayer = true;
             agent.isStopped = true;
-           
+
+            //Ollie's Voice Script Method
+
+            danuVoiceScript.Introduction();
+
         }
     }
 
@@ -123,10 +138,11 @@ public class NPCMovementScript : MonoBehaviour
         if (other.tag == "Player")
         {
             anim.SetTrigger("WaveFinished");
-            
+
             facingPlayer = false;
             agent.isStopped = false;
         }
     }
+
 
 }

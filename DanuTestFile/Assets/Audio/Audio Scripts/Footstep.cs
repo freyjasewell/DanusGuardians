@@ -1,5 +1,5 @@
-using UnityEngine.Audio;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Footstep : MonoBehaviour
 {
@@ -7,20 +7,30 @@ public class Footstep : MonoBehaviour
     private AudioClip[] hitClips;
     private AudioClip[] splashClips;
 
-    [Range(.1f,.5f)]
-    public float volumeChangeMultiply = .2f;
-    [Range(.1f,.5f)]
-    public float pitchChangeMultiply = .35f;
-
+    [SerializeField]
+    AudioMixerGroup nPCMixerGroup;
 
     private AudioSource audioSource;
 
+    [Range(.1f, .5f)]
+    public float volumeChangeMultiply = .2f;
+    [Range(.1f, .5f)]
+    public float pitchChangeMultiply = .35f;
+
+    [Range(0f, 1f)]
+    public float spatialBlend = 1f;
+
+
+
     void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.outputAudioMixerGroup = nPCMixerGroup;
+        audioSource.spatialBlend = spatialBlend;
+
     }
 
-  
+
     //Play Clip Method
     void Step()
     {
@@ -30,10 +40,10 @@ public class Footstep : MonoBehaviour
         audioSource.pitch = Random.Range(1 - pitchChangeMultiply, 1 + pitchChangeMultiply);
         audioSource.PlayOneShot(hitclip);
 
-        
 
 
-        
+
+
 
         //Debug.Log("Hit");
 

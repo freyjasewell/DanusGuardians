@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Video;
 using UnityEngine.Audio;
+using UnityEngine.Video;
 
 public class VideoScript : MonoBehaviour
 {
@@ -16,7 +14,7 @@ public class VideoScript : MonoBehaviour
     public float audioFadeOutTime = 1.7f;
 
     public GameObject musicTrigger;
-    
+
 
     private void Awake()
     {
@@ -25,15 +23,15 @@ public class VideoScript : MonoBehaviour
 
 
     private void OnTriggerEnter(Collider other)
-     {
-        if(other.tag == "Player")
+    {
+        if (other.tag == "Player")
         {
             videoPlayer.Play();
 
             isWatching.TransitionTo(audioFadeInTime);
         }
-        
-     } 
+
+    }
 
     private void OnTriggerExit(Collider other)
     {
@@ -47,7 +45,7 @@ public class VideoScript : MonoBehaviour
                 Debug.Log("MusicOff");
                 notWatchingMusicOff.TransitionTo(audioFadeOutTime);
             }
-            
+
             else if (musicTrigger)
             {
                 Debug.Log("MusicOn");

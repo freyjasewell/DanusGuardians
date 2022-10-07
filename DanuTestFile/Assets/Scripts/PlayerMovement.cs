@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class PlayerMovement : MonoBehaviour
 {
     //Variable set up
-   // public CharacterController controller;
+    // public CharacterController controller;
     public Transform player;
     private Animator anim;
     private NavMeshAgent agent;
@@ -28,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         MovePlayer();
         Animation();
     }
-    
+
     void MovePlayer()
     {
         //Move the player
@@ -39,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
         agent.Move(move * Time.deltaTime * agent.speed);
 
-        
+
         player.Rotate(Vector3.up * z * Time.deltaTime);
 
     }
@@ -74,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Side step animation
-        if(moveRight == true)
+        if (moveRight == true)
         {
             anim.SetBool("RightStep", true);
         }

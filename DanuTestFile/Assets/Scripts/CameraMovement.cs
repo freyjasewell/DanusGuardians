@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
     public Transform player;
     float sensitivity = 5f;
-   
+
     public float minTurnAngle = -90.0f;
     public float maxTurnAngle = 90.0f;
     private float rotX;

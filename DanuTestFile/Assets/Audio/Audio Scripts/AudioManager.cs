@@ -1,4 +1,3 @@
-using UnityEngine.Audio;
 using System;
 using UnityEngine;
 
@@ -9,8 +8,8 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance;
 
-    
-    void Awake ()
+
+    void Awake()
     {
         //Check Audio Manager Exists
         if (instance == null)
@@ -34,9 +33,9 @@ public class AudioManager : MonoBehaviour
     }
 
     //Method Finding Sound s by name
-public void Play (string name)
+    public void Play(string name)
     {
-       Sound s = Array.Find(sounds, sound => sound.name == name);
+        Sound s = Array.Find(sounds, sound => sound.name == name);
         if (s == null)
         {
             Debug.LogWarning("Sound: " + name + " not found!");

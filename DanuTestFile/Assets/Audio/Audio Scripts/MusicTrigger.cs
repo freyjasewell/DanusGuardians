@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -25,7 +22,7 @@ public class MusicTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         print("Collision");
-        
+
         musicSource = GetComponent<AudioSource>();
 
         m_Collider = GetComponent<Collider>();
