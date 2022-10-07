@@ -26369,7 +26369,7 @@ VideoPlayer:
   - {fileID: 922978995}
   m_DirectAudioVolumes:
   - 1
-  m_Url: https://fgreetham.github.io/GuardianVideos/Yesica_DET.mp4
+  m_Url: https://fgreetham.github.io/GuardianVideos/Yesica_DET_04.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -36029,7 +36029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1518848665}
   m_Layer: 0
-  m_Name: --Videos--
+  m_Name: Videos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43498,7 +43498,7 @@ VideoPlayer:
   - {fileID: 1828293233}
   m_DirectAudioVolumes:
   - 1
-  m_Url: https://fgreetham.github.io/GuardianVideos/Yesica_DET_04.mp4
+  m_Url: https://fgreetham.github.io/GuardianVideos/Yesica_DET.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
