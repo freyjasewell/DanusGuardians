@@ -9,7 +9,7 @@ public class CinemachineSequence : MonoBehaviour
     public CinemachineVirtualCamera vCamera2;
     public CinemachineVirtualCamera vCameraFP;
 
-
+    [Space(20)]
     public AudioMixerSnapshot audioSnapMaster_InPlant;
     public AudioMixerSnapshot audioSnapPlayerNPC_InPlant;
     public float audioTransitionTime = 8.5f;
@@ -23,8 +23,9 @@ public class CinemachineSequence : MonoBehaviour
         vCamera2.m_Priority = 1;
         vCameraFP.m_Priority = 0;
 
-        ///Ollies Audio Transitions
 
+
+        //Ollies Audio Transitions
         audioSnapMaster_InPlant.TransitionTo(audioTransitionTime);
         audioSnapPlayerNPC_InPlant.TransitionTo(audioTransitionTime);
 

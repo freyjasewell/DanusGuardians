@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -7,13 +9,15 @@ public class MusicTrigger : MonoBehaviour
     private Collider m_Collider;
 
 
-    public AudioMixerSnapshot musicOn;
-    public AudioMixerSnapshot musicOff;
+    public AudioMixerSnapshot musicOnSnapshot;
+    public AudioMixerSnapshot musicOffSnapshot;
 
     public AudioMixerSnapshot playerNPCDefault;
 
     public float transitionTimeOn = 1.5f;
     public float transitionTimeOff = 2.5f;
+    [HideInInspector] public bool isPlaying = false;
+    // public bool reverbZoneToggleEngaged = false;
 
     AudioSource musicSource;
 
@@ -21,11 +25,14 @@ public class MusicTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("Collision");
-
+        isPlaying = true;
+        
         musicSource = GetComponent<AudioSource>();
 
-        m_Collider = GetComponent<Collider>();
+        m_Collider = GetComponent<Collider>(); //Getting Collider to toggle Off
+
+
+
 
 
 
@@ -34,7 +41,7 @@ public class MusicTrigger : MonoBehaviour
             if (!playMusic.isPlaying)
             {
                 playMusic.Play();
-                musicOn.TransitionTo(transitionTimeOn);
+                musicOnSnapshot.TransitionTo(transitionTimeOn);
 
                 Invoke("musicFinished", musicSource.clip.length);
 
@@ -46,8 +53,10 @@ public class MusicTrigger : MonoBehaviour
     }
     void musicFinished()
     {
-        Debug.Log("Audio Finished");
-        musicOff.TransitionTo(transitionTimeOff);
+        //Debug.Log("Audio Finished");
+        musicOffSnapshot.TransitionTo(transitionTimeOff);
+
+        isPlaying = false;
 
         Destroy(musicSource);
         Destroy(gameObject);

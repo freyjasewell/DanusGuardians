@@ -1,14 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class PlayerMovement : MonoBehaviour
 {
     //Variable set up
-    // public CharacterController controller;
+   // public CharacterController controller;
     public Transform player;
     private Animator anim;
     private NavMeshAgent agent;
     private Transform cameraTransform;
+    
 
     public float rotationSensitivity;
 
@@ -18,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         cameraTransform = Camera.main.transform;
+        
     }
 
     // Update is called once per frame
@@ -25,26 +29,30 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
         Animation();
-    }
 
+      //  FaceForward();
+    }
+    
     void MovePlayer()
     {
         //Move the player
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
-        //Vector3 move = transform.right * x + transform.forward * z;
         Vector3 move = cameraTransform.right * x + cameraTransform.forward * z;
-
         agent.Move(move * Time.deltaTime * agent.speed);
-
-
-        player.Rotate(Vector3.up * z * Time.deltaTime);
-
+        FaceForward();
     }
+
+    void FaceForward()
+    {
+        Vector3 direction = cameraTransform.forward;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+    }
+
 
     void Animation()
     {
-
         //Animation variables
         bool movingFoward = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);
         bool movingBackwards = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
@@ -72,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Side step animation
-        if (moveRight == true)
+        if(moveRight == true)
         {
             anim.SetBool("RightStep", true);
         }
