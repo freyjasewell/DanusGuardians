@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -45,9 +44,9 @@ public class ReverbZoneToggle : MonoBehaviour
         if (other.tag == "Player")
         {
 
-            Debug.Log(PlayerInPlant);
+           //Debug.Log(PlayerInPlant);
 
-            Debug.Log("Trigger Hit By Player");
+           //Debug.Log("Trigger Hit By Player");
 
             if (PlayerInPlant == true) //Snapshot Management
             {
@@ -57,14 +56,14 @@ public class ReverbZoneToggle : MonoBehaviour
                 {
                     musicPlayingSnapshot.TransitionTo(musicTriggerScript.transitionTimeOn);
 
-                    Debug.Log("OutPlant & Music");
+                   // Debug.Log("OutPlant & Music");
 
                 }
                 else if (musicTriggerScript.isPlaying == false)
                 {
                     outPlantSnap.TransitionTo(musicTriggerScript.transitionTimeOff);
 
-                    Debug.Log("OutPlant");
+                   //Debug.Log("OutPlant");
                 }
 
             }
@@ -74,7 +73,7 @@ public class ReverbZoneToggle : MonoBehaviour
 
                 inPlantSnap.TransitionTo(musicTriggerScript.transitionTimeOn);
 
-                Debug.Log("InPlant");
+               // Debug.Log("InPlant");
             }
 
            

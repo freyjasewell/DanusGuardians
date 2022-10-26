@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -178,7 +177,7 @@ public class DanuVoiceLines : MonoBehaviour
         if (_isSpeaking == false) //Stops Bird Coroutine Loop
         {
             StopCoroutine(_birdLoopCoroutine);
-            Debug.Log("Coroutine Internal Stop Triggered");
+           // Debug.Log("Coroutine Internal Stop Triggered");
         }
 
         else if (_isSpeaking == true) //Starts Bird Coroutine Loop
