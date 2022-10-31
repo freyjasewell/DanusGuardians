@@ -1,24 +1,21 @@
+using Assets.Audio.Audio_Scripts.MixerManagement;
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.Video;
 
 public class VideoScript : MonoBehaviour
 {
     private VideoPlayer videoPlayer;
 
-    public AudioMixerSnapshot isWatching;
-    public AudioMixerSnapshot notWatchingMusicOff;
-    public AudioMixerSnapshot notWatchingMusicON;
+    [SerializeField] private MixerTransitionManager mixerTransitionManager;
 
-    public float audioFadeInTime = 1.5f;
-    public float audioFadeOutTime = 1.7f;
-
-    public GameObject musicTrigger;
+    [SerializeField] private GameObject mixerManagerGO;
 
 
     private void Awake()
     {
         videoPlayer = GetComponent<VideoPlayer>();
+
+        mixerTransitionManager = mixerManagerGO.GetComponent<MixerTransitionManager>();
     }
 
 
@@ -28,10 +25,11 @@ public class VideoScript : MonoBehaviour
         {
             videoPlayer.Play();
 
-            isWatching.TransitionTo(audioFadeInTime);
+            mixerTransitionManager.IsWatchingVideoAudioTransition();
         }
 
     }
+
 
     private void OnTriggerExit(Collider other)
     {
@@ -40,18 +38,11 @@ public class VideoScript : MonoBehaviour
             //videoPlayer.Pause();
             videoPlayer.Stop();
 
-            if (musicTrigger.gameObject == null)
-            {
-                Debug.Log("MusicOff");
-                notWatchingMusicOff.TransitionTo(audioFadeOutTime);
-            }
 
-            else if (musicTrigger)
-            {
-                Debug.Log("MusicOn");
-                notWatchingMusicON.TransitionTo(audioFadeOutTime);
-            }
+            // Music Check
+            mixerTransitionManager.MusicCheckTransition();
         }
     }
+
 
 }

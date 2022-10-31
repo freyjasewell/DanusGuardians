@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45106554, g: 0.6695443, b: 0.65616643, a: 1}
+  m_IndirectSpecularColor: {r: 0.45106554, g: 0.66954434, b: 0.65616643, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -407,6 +407,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32140209}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &47440077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 47440078}
+  m_Layer: 0
+  m_Name: Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &47440078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47440077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1088611172}
+  - {fileID: 425582091}
+  - {fileID: 755597561}
+  - {fileID: 786675573}
+  - {fileID: 105201088}
+  m_Father: {fileID: 1951088938}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &54065949
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,8 +872,8 @@ Transform:
   m_LocalPosition: {x: -12.89, y: 17.931, z: 22.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1951088938}
-  m_RootOrder: 6
+  m_Father: {fileID: 47440078}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &119599228
 GameObject:
@@ -2846,7 +2881,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 44.6, z: -68.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1951088938}
+  m_Father: {fileID: 47440078}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &425582092
@@ -4013,15 +4048,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 6.17
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &557717546
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -4306,15 +4334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 4.5
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &575606193
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -4478,15 +4499,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 1.5
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &580089048
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -14906,15 +14920,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 1.5
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &670357476
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -20356,7 +20363,7 @@ Transform:
   m_LocalPosition: {x: -68.3, y: 47.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1951088938}
+  m_Father: {fileID: 47440078}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &755597562
@@ -20578,15 +20585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 1.5
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &756475377
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -21013,11 +21013,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786675572}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.35, y: 27.15, z: 1.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1951088938}
+  m_Father: {fileID: 47440078}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &786675574
@@ -26483,15 +26483,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 2.76
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &922978991
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -32692,7 +32685,7 @@ Transform:
   m_LocalPosition: {x: 54.71, y: 39.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1951088938}
+  m_Father: {fileID: 47440078}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1088611173
@@ -33234,15 +33227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 1.5
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &1133859456
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -36236,6 +36222,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 95087794}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1553654235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1553654236}
+  m_Layer: 0
+  m_Name: AudioScripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1553654236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553654235}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2010894859}
+  m_Father: {fileID: 1951088938}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1565468703
 GameObject:
@@ -41296,15 +41313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 1.5
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &1616525005
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -42904,15 +42914,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 1.5
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &1766352009
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -43180,15 +43183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 4.77
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &1795799106
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -43413,15 +43409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 1.5
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &1809913801
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -43617,15 +43606,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 1.5
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &1828293229
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -44115,15 +44097,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 1.5
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &1842408262
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -44460,15 +44435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9951958a8e953437991c8b4d9d19f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
-    type: 2}
-  audioFadeInTime: 1.5
-  audioFadeOutTime: 1.7
-  musicTrigger: {fileID: 0}
+  mixerTransitionManager: {fileID: 2010894860}
+  mixerManager: {fileID: 2010894858}
 --- !u!328 &1860880588
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -44647,7 +44615,7 @@ Transform:
   m_LocalScale: {x: 0.47339156, y: 1, z: 0.56556964}
   m_Children: []
   m_Father: {fileID: 1951088938}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -41.63}
 --- !u!82 &1869051789
 AudioSource:
@@ -45277,13 +45245,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1088611172}
-  - {fileID: 425582091}
-  - {fileID: 755597561}
-  - {fileID: 786675573}
   - {fileID: 2060701209}
   - {fileID: 1869051788}
-  - {fileID: 105201088}
+  - {fileID: 1553654236}
+  - {fileID: 47440078}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45537,6 +45502,58 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1976755580}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2010894858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2010894859}
+  - component: {fileID: 2010894860}
+  m_Layer: 0
+  m_Name: MixerTransitionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2010894859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010894858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1553654236}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2010894860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010894858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dca2e413e714bb247ae4860e5d7b36f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWatching: {fileID: -1491122649465997759, guid: 1cd013ce1433f844184c344276c39602,
+    type: 2}
+  notWatchingMusicOff: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
+    type: 2}
+  notWatchingMusicON: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
+    type: 2}
+  videoAudioFadeInTime: 1.5
+  videoAudioFadeOutTime: 1.7
+  musicTrigger: {fileID: 1869051787}
 --- !u!1 &2013068200
 GameObject:
   m_ObjectHideFlags: 0
@@ -46190,7 +46207,7 @@ Transform:
   m_Children:
   - {fileID: 1667203768}
   m_Father: {fileID: 1951088938}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2071826460
 GameObject:
