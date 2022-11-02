@@ -25,13 +25,13 @@ namespace Assets.Audio.Audio_Scripts.MixerManagement
         {
             if (musicTrigger.gameObject == null)
             {
-                Debug.Log("MusicOff");
+                //Debug.Log("MusicOff");
                 notWatchingMusicOff.TransitionTo(videoAudioFadeOutTime);
             }
 
             else if (musicTrigger)
             {
-                Debug.Log("MusicOn");
+                //Debug.Log("MusicOn");
                 notWatchingMusicON.TransitionTo(videoAudioFadeOutTime);
             }
         }

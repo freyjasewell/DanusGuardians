@@ -177,7 +177,7 @@ public class DanuVoiceLines : MonoBehaviour
         if (_isSpeaking == false) //Stops Bird Coroutine Loop
         {
             StopCoroutine(_birdLoopCoroutine);
-            Debug.Log("Coroutine Internal Stop Triggered");
+            //Debug.Log("Coroutine Internal Stop Triggered");
         }
 
         else if (_isSpeaking == true) //Starts Bird Coroutine Loop
@@ -197,7 +197,7 @@ public class DanuVoiceLines : MonoBehaviour
 
     void DialogueFinished() //Stops Dialogue & Changes MixerSnapshot
     {
-        Debug.Log("Dialogue Finished Triggered");
+        //Debug.Log("Dialogue Finished Triggered");
 
         if (musicTriggerBox != null)
         {

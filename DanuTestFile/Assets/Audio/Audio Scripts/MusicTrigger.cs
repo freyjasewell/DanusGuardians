@@ -25,7 +25,7 @@ public class MusicTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        isPlaying = true;
+
         
         musicSource = GetComponent<AudioSource>();
 
@@ -38,6 +38,7 @@ public class MusicTrigger : MonoBehaviour
 
         if (other.tag == "Player")
         {
+            isPlaying = true;
             if (!playMusic.isPlaying)
             {
                 playMusic.Play();

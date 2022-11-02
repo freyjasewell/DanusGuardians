@@ -8,14 +8,15 @@ public class VideoScript : MonoBehaviour
 
     [SerializeField] private MixerTransitionManager mixerTransitionManager;
 
-    [SerializeField] private GameObject mixerManagerGO;
+    //[SerializeField] private GameObject mixerManagerGO;
 
 
     private void Awake()
     {
         videoPlayer = GetComponent<VideoPlayer>();
 
-        mixerTransitionManager = mixerManagerGO.GetComponent<MixerTransitionManager>();
+        //mixerTransitionManager = mixerManagerGO.GetComponent<MixerTransitionManager>();
+        mixerTransitionManager = FindObjectOfType<MixerTransitionManager>();
     }
 
 
@@ -26,6 +27,7 @@ public class VideoScript : MonoBehaviour
             videoPlayer.Play();
 
             mixerTransitionManager.IsWatchingVideoAudioTransition();
+
         }
 
     }

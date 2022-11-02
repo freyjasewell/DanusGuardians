@@ -9,6 +9,7 @@ public class CinemachineSequence : MonoBehaviour
     public CinemachineVirtualCamera vCamera2;
     public CinemachineVirtualCamera vCameraFP;
 
+    [Header("Starting Audio Transisiton Control")]
     [Space(20)]
     public AudioMixerSnapshot audioSnapMaster_InPlant;
     public AudioMixerSnapshot audioSnapPlayerNPC_InPlant;

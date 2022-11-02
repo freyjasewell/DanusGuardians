@@ -24,7 +24,10 @@ public class NPCMovementScript : MonoBehaviour
     NavMeshAgent agent;
     Animator anim;
 
-    DanuVoiceLines danuVoiceScript;
+    [Space (10)]
+
+    [Header("Voice Manager")]
+    [SerializeField] DanuVoiceLines danuVoiceScript;
 
 
     private void Start()

@@ -4049,7 +4049,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &557717546
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -4335,7 +4334,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &575606193
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -4500,7 +4498,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &580089048
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -14921,7 +14918,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &670357476
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -20586,7 +20582,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &756475377
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -26484,7 +26479,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &922978991
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -33228,7 +33222,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &1133859456
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -41314,7 +41307,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &1616525005
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -42915,7 +42907,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &1766352009
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -43184,7 +43175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &1795799106
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -43410,7 +43400,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &1809913801
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -43607,7 +43596,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &1828293229
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -44098,7 +44086,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &1842408262
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -44436,7 +44423,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerTransitionManager: {fileID: 2010894860}
-  mixerManager: {fileID: 2010894858}
 --- !u!328 &1860880588
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -47436,6 +47422,7 @@ MonoBehaviour:
   - {fileID: 746060403}
   - {fileID: 1295983235}
   - {fileID: 216131813}
+  danuVoiceScript: {fileID: 0}
 --- !u!114 &2403939638983566286
 MonoBehaviour:
   m_ObjectHideFlags: 0
