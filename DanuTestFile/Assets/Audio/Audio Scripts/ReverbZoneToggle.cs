@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -17,10 +16,11 @@ public class ReverbZoneToggle : MonoBehaviour
 
     [Header("Snapshot Transisitons")]
     [Space(10)]
-    [SerializeField] private AudioMixerSnapshot inPlantSnap;
-    [SerializeField] private AudioMixerSnapshot outPlantSnap;
+    [SerializeField] private AudioMixerSnapshot inPlantSnapMasterMixer;
+    [SerializeField] private AudioMixerSnapshot outPlantSnapMasterMixer;
     [SerializeField] private AudioMixerSnapshot musicPlayingSnapshot;
-
+    [SerializeField] private AudioMixerSnapshot inPlantSnapNPCMixer;
+    [SerializeField] private AudioMixerSnapshot outPlantSnapNPCMixer;
     public static bool PlayerInPlant { get; set; }
 
 
@@ -56,13 +56,16 @@ public class ReverbZoneToggle : MonoBehaviour
                 {
                     musicPlayingSnapshot.TransitionTo(musicTriggerScript.transitionTimeOn);
 
+                    outPlantSnapNPCMixer.TransitionTo(musicTriggerScript.transitionTimeOff); //NPC Mixer
+
                     //Debug.Log("OutPlant & Music");
 
                 }
                 else if (musicTriggerScript.isPlaying == false)
                 {
-                    outPlantSnap.TransitionTo(musicTriggerScript.transitionTimeOff);
-
+                    outPlantSnapMasterMixer.TransitionTo(musicTriggerScript.transitionTimeOff);
+                    outPlantSnapNPCMixer.TransitionTo(musicTriggerScript.transitionTimeOff); //NPC Mixer
+                    
                     //Debug.Log("OutPlant");
                 }
 
@@ -71,7 +74,8 @@ public class ReverbZoneToggle : MonoBehaviour
             {
                 PlayerInPlant = true;
 
-                inPlantSnap.TransitionTo(musicTriggerScript.transitionTimeOn);
+                inPlantSnapMasterMixer.TransitionTo(musicTriggerScript.transitionTimeOn);
+                inPlantSnapNPCMixer.TransitionTo(musicTriggerScript.transitionTimeOn); //NPC Mixer
 
                 //Debug.Log("InPlant");
             }

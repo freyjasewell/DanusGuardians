@@ -172,10 +172,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reverbZone: {fileID: 0}
   musicPlayer: {fileID: 1869051787}
-  inPlantSnap: {fileID: -7919342901950374431, guid: 1cd013ce1433f844184c344276c39602,
+  inPlantSnapMasterMixer: {fileID: -7919342901950374431, guid: 1cd013ce1433f844184c344276c39602,
     type: 2}
-  outPlantSnap: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602, type: 2}
+  outPlantSnapMasterMixer: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
+    type: 2}
   musicPlayingSnapshot: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
+    type: 2}
+  inPlantSnapNPCMixer: {fileID: -7378955246336987997, guid: 628261044baa0f54eb97f9a593ec1630,
+    type: 2}
+  outPlantSnapNPCMixer: {fileID: 24500006, guid: 628261044baa0f54eb97f9a593ec1630,
     type: 2}
 --- !u!64 &13137507
 MeshCollider:
@@ -511,10 +516,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reverbZone: {fileID: 0}
   musicPlayer: {fileID: 1869051787}
-  inPlantSnap: {fileID: -7919342901950374431, guid: 1cd013ce1433f844184c344276c39602,
+  inPlantSnapMasterMixer: {fileID: -7919342901950374431, guid: 1cd013ce1433f844184c344276c39602,
     type: 2}
-  outPlantSnap: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602, type: 2}
+  outPlantSnapMasterMixer: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
+    type: 2}
   musicPlayingSnapshot: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
+    type: 2}
+  inPlantSnapNPCMixer: {fileID: -7378955246336987997, guid: 628261044baa0f54eb97f9a593ec1630,
+    type: 2}
+  outPlantSnapNPCMixer: {fileID: 24500006, guid: 628261044baa0f54eb97f9a593ec1630,
     type: 2}
 --- !u!1 &58261315
 GameObject:
@@ -681,10 +691,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reverbZone: {fileID: 0}
   musicPlayer: {fileID: 1869051787}
-  inPlantSnap: {fileID: -7919342901950374431, guid: 1cd013ce1433f844184c344276c39602,
+  inPlantSnapMasterMixer: {fileID: -7919342901950374431, guid: 1cd013ce1433f844184c344276c39602,
     type: 2}
-  outPlantSnap: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602, type: 2}
+  outPlantSnapMasterMixer: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
+    type: 2}
   musicPlayingSnapshot: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
+    type: 2}
+  inPlantSnapNPCMixer: {fileID: -7378955246336987997, guid: 628261044baa0f54eb97f9a593ec1630,
+    type: 2}
+  outPlantSnapNPCMixer: {fileID: 24500006, guid: 628261044baa0f54eb97f9a593ec1630,
     type: 2}
 --- !u!1 &81615496
 GameObject:
@@ -1421,10 +1436,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reverbZone: {fileID: 0}
   musicPlayer: {fileID: 1869051787}
-  inPlantSnap: {fileID: -7919342901950374431, guid: 1cd013ce1433f844184c344276c39602,
+  inPlantSnapMasterMixer: {fileID: -7919342901950374431, guid: 1cd013ce1433f844184c344276c39602,
     type: 2}
-  outPlantSnap: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602, type: 2}
+  outPlantSnapMasterMixer: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
+    type: 2}
   musicPlayingSnapshot: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
+    type: 2}
+  inPlantSnapNPCMixer: {fileID: -7378955246336987997, guid: 628261044baa0f54eb97f9a593ec1630,
+    type: 2}
+  outPlantSnapNPCMixer: {fileID: 24500006, guid: 628261044baa0f54eb97f9a593ec1630,
     type: 2}
 --- !u!1 &205815062
 GameObject:
@@ -3595,7 +3615,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 10d7478bed3c38440967bbc5ebc7d3b5, type: 3}
   - {fileID: 8300000, guid: e3bca82ca9dbc0f46b10a27ea45fa1e4, type: 3}
   - {fileID: 8300000, guid: 71c203bee7bf12848bd3e00bbe66b648, type: 3}
-  nPCMixerGroup: {fileID: -8788876620495042906, guid: 628261044baa0f54eb97f9a593ec1630,
+  nPCMixerGroup: {fileID: -51264072770150050, guid: 628261044baa0f54eb97f9a593ec1630,
     type: 2}
   volumeChangeMultiply: 0.2
   pitchChangeMultiply: 0.35
@@ -4095,7 +4115,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.06
+  m_Radius: 0.042
   m_Center: {x: 2.5123543e-18, y: -1.1295327e-11, z: 0.0009870768}
 --- !u!82 &557717550
 AudioSource:
@@ -32645,10 +32665,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reverbZone: {fileID: 0}
   musicPlayer: {fileID: 1869051787}
-  inPlantSnap: {fileID: -7919342901950374431, guid: 1cd013ce1433f844184c344276c39602,
+  inPlantSnapMasterMixer: {fileID: -7919342901950374431, guid: 1cd013ce1433f844184c344276c39602,
     type: 2}
-  outPlantSnap: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602, type: 2}
+  outPlantSnapMasterMixer: {fileID: 24500006, guid: 1cd013ce1433f844184c344276c39602,
+    type: 2}
   musicPlayingSnapshot: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
+    type: 2}
+  inPlantSnapNPCMixer: {fileID: -7378955246336987997, guid: 628261044baa0f54eb97f9a593ec1630,
+    type: 2}
+  outPlantSnapNPCMixer: {fileID: 24500006, guid: 628261044baa0f54eb97f9a593ec1630,
     type: 2}
 --- !u!1 &1088611171
 GameObject:
@@ -47346,7 +47371,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 10d7478bed3c38440967bbc5ebc7d3b5, type: 3}
   - {fileID: 8300000, guid: e3bca82ca9dbc0f46b10a27ea45fa1e4, type: 3}
   - {fileID: 8300000, guid: 71c203bee7bf12848bd3e00bbe66b648, type: 3}
-  nPCMixerGroup: {fileID: -8788876620495042906, guid: 628261044baa0f54eb97f9a593ec1630,
+  nPCMixerGroup: {fileID: -6961441407362213278, guid: 628261044baa0f54eb97f9a593ec1630,
     type: 2}
   volumeChangeMultiply: 0.2
   pitchChangeMultiply: 0.35
@@ -47442,7 +47467,7 @@ MonoBehaviour:
     type: 2}
   musicOnAudioSnapShot: {fileID: -6640452715390190588, guid: 1cd013ce1433f844184c344276c39602,
     type: 2}
-  snapShotTransisitonTime: 0.587
+  snapShotTransisitonTime: 0.751
   nPCMixerGroup: {fileID: -3107280998795614791, guid: 628261044baa0f54eb97f9a593ec1630,
     type: 2}
   introductionClip: {fileID: 8300000, guid: d6c6e21dc25761c45abd9c0b11e604d8, type: 3}
